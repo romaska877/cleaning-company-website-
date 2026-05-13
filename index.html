@@ -124,15 +124,35 @@
     </section>
 
     <section id="contact" class="section contact">
-      <p class="section-label">Get started</p>
-      <h2>Request a free quote</h2>
-      <p>
-        Tell us what type of clean you need and we’ll get back to you with a simple quote.
-      </p>
+  <p class="section-label">Get started</p>
+  <h2>Request a free quote</h2>
+  <p>
+    Tell us what type of clean you need and we’ll get back to you with a simple quote.
+  </p>
 
-      <button id="quoteButton">Request Quote</button>
-      <p id="quoteMessage"></p>
-    </section>
+  <form class="quote-form" id="quoteForm">
+    <div class="form-row">
+      <input type="text" id="name" placeholder="Your name" required />
+      <input type="email" id="email" placeholder="Your email" required />
+    </div>
+
+    <div class="form-row">
+      <input type="tel" id="phone" placeholder="Phone number" />
+      <select id="service" required>
+        <option value="">Select a service</option>
+        <option value="Home Cleaning">Home Cleaning</option>
+        <option value="Deep Cleaning">Deep Cleaning</option>
+        <option value="Office Cleaning">Office Cleaning</option>
+      </select>
+    </div>
+
+    <textarea id="message" placeholder="Tell us what you need" rows="5"></textarea>
+
+    <button type="submit">Send Quote Request</button>
+  </form>
+
+  <p id="quoteMessage"></p>
+</section>
   </main>
 
   <footer>

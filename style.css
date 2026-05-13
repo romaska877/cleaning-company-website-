@@ -268,7 +268,44 @@ button:hover {
   font-size: 18px;
   line-height: 1.6;
 }
+.quote-form {
+  max-width: 800px;
+  margin: 35px auto 0;
+  background-color: #f6fbfb;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(31, 41, 55, 0.08);
+}
 
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #d1fae5;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.quote-form textarea {
+  resize: vertical;
+  margin-bottom: 15px;
+}
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+  outline: none;
+  border-color: #0f766e;
+}
 #quoteMessage {
   margin-top: 20px;
   font-weight: bold;
@@ -330,5 +367,9 @@ footer {
 
   .section h2 {
     font-size: 30px;
+  }
+
+    .form-row {
+    flex-direction: column;
   }
 }

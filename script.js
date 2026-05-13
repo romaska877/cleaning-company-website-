@@ -1,7 +1,11 @@
-const quoteButton = document.getElementById("quoteButton");
+const quoteForm = document.getElementById("quoteForm");
 const quoteMessage = document.getElementById("quoteMessage");
 
-quoteButton.addEventListener("click", function () {
+quoteForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
   quoteMessage.textContent =
-    "Thanks! Please call 020 1234 5678 or email hello@freshnestcleaning.co.uk to request your quote.";
+    "Thank you! Your quote request has been received. We will contact you soon.";
+
+  quoteForm.reset();
 });
