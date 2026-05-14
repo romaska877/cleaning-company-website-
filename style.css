@@ -35,6 +35,17 @@ body {
   font-weight: bold;
 }
 
+.menu-toggle {
+  display: none;
+  background-color: #0f766e;
+  color: white;
+  border: none;
+  font-size: 26px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .hero-layout {
   display: flex;
   align-items: center;
@@ -321,15 +332,25 @@ footer {
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    gap: 20px;
-  }
+  position: relative;
+}
 
-  .nav-links {
-    flex-direction: column;
-    text-align: center;
-    gap: 12px;
-  }
+.menu-toggle {
+  display: block;
+}
+
+.nav-links {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.nav-links.active {
+  display: flex;
+}
 
   .hero-layout {
     flex-direction: column;
